@@ -168,10 +168,10 @@ dependencies {
     compile group: 'com.h2database', name:'h2', version: '1.4.196'
     compile group: 'javax.ws.rs', name: 'javax.ws.rs-api', version: '2.1'
 
-    compile group: 'org.apache.kafka', name: 'connect-api', version: '1.0.0'
+    compile group: 'org.apache.kafka', name: 'connect-api', version: '1.0.1'
 
-    compile group: 'org.apache.kafka', name:'kafka-streams', version: '1.0.0'
-    compile group: 'org.apache.kafka', name:'kafka-clients', version: '1.0.0'
+    compile group: 'org.apache.kafka', name:'kafka-streams', version: '1.0.1'
+    compile group: 'org.apache.kafka', name:'kafka-clients', version: '1.0.1'
 
 
     compile group: 'org.rocksdb', name: 'rocksdbjni', version: '5.3.6'
@@ -188,14 +188,14 @@ dependencies {
 
     testCompile group:'org.hamcrest', name:'hamcrest-junit', version:'2.0.0.0'
 
-    testCompile group:'org.apache.kafka', name:'kafka-streams', version:'1.0.0', classifier: 'test'
-    testCompile group:'org.apache.kafka', name:'kafka-clients', version:'1.0.0', classifier: 'test'
+    testCompile group:'org.apache.kafka', name:'kafka-streams', version:'1.0.1', classifier: 'test'
+    testCompile group:'org.apache.kafka', name:'kafka-clients', version:'1.0.1', classifier: 'test'
 
-    testCompile (group:'org.apache.kafka', name:'kafka_2.12', version:'1.0.0') {
+    testCompile (group:'org.apache.kafka', name:'kafka_2.12', version:'1.0.1') {
         exclude group: 'org.slf4j', module: 'slf4j-log4j12'
     }
 
-    testCompile (group:'org.apache.kafka', name:'kafka_2.12', version:'1.0.0', classifier: 'test') {
+    testCompile (group:'org.apache.kafka', name:'kafka_2.12', version:'1.0.1', classifier: 'test') {
         exclude group: 'org.slf4j', module: 'slf4j-log4j12'
     }
 
